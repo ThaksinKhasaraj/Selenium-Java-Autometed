@@ -10,15 +10,15 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 
-public class LoginTC4 extends BaseTest {
+public class LoginTC5 extends BaseTest {
     WebDriverWait wait;
 @Test
-    public void TC4LoginInvalid() {
+    public void TC5LoginInvalid() {
     // go to the saucedemo.com web
     WebDriver driver = PageDriver.getDriver();
-    // Input an invalid username and password valid and click the login button
+    // Input an valid username and password invalid and click the login button
     LoginPage loginPage = new LoginPage();
-    loginPage.login("inn", "secret_sauce");
+    loginPage.login("standard_user", "qa101");
     // Verify that the login failed and display the error message
     WebElement errorMessage = driver.findElement(By.xpath("//h3[@data-test='error']"));
     String errorMessageText = errorMessage.getText();

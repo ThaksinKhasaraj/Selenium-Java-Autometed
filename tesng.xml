@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name= "MySuite" parallel= "none">
+<test name="Regression" preserve-order="true">
+    <classes>
+<!-- Validate that you’re logged in successfully. and login unsuccessfully -->
+        <class name="testCase.LoginTC1"/>
+        <class name="testCase.LoginTC2"/>
+        <class name="testCase.LoginTC3"/>
+        <class name="testCase.LoginTC4"/>
+        <class name="testCase.LoginTC5"/>
+        <class name="testCase.LoginTC6"/>
+        <class name="testCase.LoginTC7"/>
+        <!-- Validate that the product was added into the cart. -->
+        <class name="testCase.ImportFileProdTS1"/>
+        <class name="testCase.AddProdToCartTS2"/>
+        <class name="testCase.AddProdToCartTS3"/>
+        <class name="testCase.AddProdToCartTS4"/>
+        <class name="testCase.AddProdToCartTS5"/>
+    </classes>
+        </test>
+</suite>
